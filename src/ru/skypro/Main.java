@@ -43,15 +43,15 @@ public class Main {
             int[] num = new int[]{1, 2, 3};
             float[] numTwo = new float[]{1.57f, 7.654f, 9.986f};
             int[] numThree = {1, 15, 48};
-            for (int i = numTwo.length - 1; i >= 0; ) {
+            for (int i = numTwo.length - 1; i >= 0;) {
                 if (i == 0){
                     System.out.println(num [i]);
                     break;
                 }
                 System.out.print(num [i] + ",");
-                i = i-1;
-            }
-            for (int i = numTwo.length - 1; i >= 0; ) {
+                i = i-1;}
+
+            for (int i = numTwo.length - 1; i >= 0;) {
                 if (i == 0){
                     System.out.println(numTwo [i]);
                     break;
@@ -59,7 +59,7 @@ public class Main {
                 System.out.print(numTwo [i] + ",");
                 i = i-1;
             }
-            for (int i = numThree.length - 1; i >= 0; ) {
+            for (int i = numThree.length - 1; i >= 0;) {
                 if (i == 0){
                     System.out.println(numThree [i]);
                     break;
@@ -75,7 +75,9 @@ public class Main {
                 int number = num [i];
                 if ( number % 2 != 0){
                     num [i] = number + 1;
-                }
+                    System.out.println(num [i]);
+                }else if  ( number % 2 == 0){
+                    System.out.println(number);}
             }
         }
     }
